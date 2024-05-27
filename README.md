@@ -88,11 +88,12 @@ clinic-appointment-system/
 
 
 
+<img width="820" alt="P2" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/af9e76d4-ae77-4164-b9b9-622283c6564e">
+
+<img width="740" alt="P3" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/5133c3d2-824e-4519-a73e-3f8486c8bdda">
 
 
-
-
-
+<img width="671" alt="NServer" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/62860695-8240-4929-8be7-0e692e27c23b">
 
 
 
