@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Appointment System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('{{ url_for('static', filename='Pic.jpg') }}');
+            background-size: cover;
+            background-attachment: fixed;
+            backdrop-filter: blur(5px);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1, h2 {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        label, select, button {
+            display: block;
+            margin: 10px auto;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To Ahsan-ismail's Clinic Appointment System</h1>
+
+    <h2>Check Busy Slots</h2>
+    <form action="/check_busy_slots" method="POST">
+        <label for="busy_day">Select a day:</label>
+        <select name="day" id="busy_day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        <button type="submit">Check Busy Slots</button>
+    </form>
+    {% if busy_slots %}
+        <p>Busy slots: {{ busy_slots }}</p>
+    {% endif %}
+
+    <h2>Check Available Slots</h2>
+    <form action="/check_available_slots" method="POST">
+        <label for="available_day">Select a day:</label>
+        <select name="day" id="available_day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        <button type="submit">Check Available Slots</button>
+    </form>
+    {% if available_slots %}
+        <p>Available slots: {{ available_slots }}</p>
+    {% endif %}
+
+    <h2>Book Slot</h2>
+    <form action="/book_slot" method="POST">
+        <label for="booking_day">Select a day:</label>
+        <select name="day" id="booking_day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select><br>
+        <label for="booking_slot">Select a time slot:</label>
+        <select name="slot" id="booking_slot">
+            <option value="0">12 o'clock</option>
+            <option value="1">1 o'clock</option>
+            <option value="2">2 o'clock</option>
+            <option value="3">3 o'clock</option>
+        </select><br>
+        <button type="submit">Book Appointment</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+</body>
+</html>

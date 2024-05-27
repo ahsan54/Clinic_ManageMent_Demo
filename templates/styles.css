@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.carepointmedical.com.au/wp-content/uploads/2020/03/Clinic-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(30%);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+h1, h2 {
+    color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+label, select, button {
+    display: block;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ffcc00;
+}
