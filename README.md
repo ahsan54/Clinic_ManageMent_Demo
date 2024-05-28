@@ -27,7 +27,7 @@ Ngrok
 
 ## Installation
 Clone the repository:
-git clone https://github.com/your-username/clinic-appointment-system.git
+git clone https://github.com/ahsan54/Clinic_ManageMent_Demo.git
 cd clinic-appointment-system
 
 ## Create and activate a virtual environment:
