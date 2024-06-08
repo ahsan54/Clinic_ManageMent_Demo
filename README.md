@@ -86,19 +86,19 @@ clinic-appointment-system/
 
 
 
+<img width="530" alt="S1" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/d8a40f81-df1b-4300-979d-3b90d9ced3e4">
 
 
-<img width="820" alt="P2" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/af9e76d4-ae77-4164-b9b9-622283c6564e">
 
-<img width="740" alt="P3" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/5133c3d2-824e-4519-a73e-3f8486c8bdda">
-
-
-<img width="671" alt="NServer" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/62860695-8240-4929-8be7-0e692e27c23b">
-
-
-<img width="959" alt="P3" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/f9654289-bf51-4562-b9c7-f16b35c6d704">
-
-<img width="959" alt="P2" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/e7a04bd6-cd3c-422c-9e08-cc8950e495c1">
-
+<img width="959" alt="S6" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/553b7cb6-157a-4bbd-aa5f-c64482c77ae4">
+<img width="211" alt="S5 MobileView" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/f178e1b3-fdff-48a6-b0c4-95bb153889c7">
+<img width="959" alt="S5" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/ceee87d8-e6c8-4ab4-bfd9-643649117ac8">
+<img width="547" alt="S4" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/26798b95-5d19-448b-b9eb-d9abdb72a241">
+<img width="489" alt="S3" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/6cc043c9-9dcb-44e9-9324-e2a6e790f3a4">
+<img width="532" alt="S2" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/30c8817a-3b75-4da7-8801-8e6c13f415cf">
+<img width="205" alt="S10" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/d1cebd11-863d-4b38-83c7-448124440178">
+<img width="233" alt="S7 mobileView" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/67b0fd4f-40ac-40cd-8fc7-7be2edc79a87">
+<img width="214" alt="S8" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/7cd31623-8fab-4bd7-bbe9-a03f07e246b9">
+<img width="700" alt="S7" src="https://github.com/ahsan54/Clinic_ManageMent_Demo/assets/91593963/85032986-1d1e-4c30-8522-6e0188ff6dc1">
 
 
