@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Appointment </title>
+    <style>
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 60%;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('{{ url_for('static', filename='Pic.jpg') }}');
+            background-size: cover;
+            background-attachment: fixed;
+            backdrop-filter: blur(5px);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1, h2 {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        label, select, button {
+            display: block;
+            margin: 10px auto;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #070000;
+        }
+
+        
+.nav-bar {
+  background-color: #ffc0cb;
+  border-radius: 4rem;
+  padding: 2rem 4rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  width: fit-content;
+  position: absolute;
+
+}
+
+
+.nav-bar {
+  background-color: fff(59, 127, 190);
+  position: fixed;
+  top: 0%;
+  width: 28%;
+  left: 72%; 
+}
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    padding: 0px;
+    justify-content: space-around; 
+    width: 90%;
+    left: 6%; 
+  }
+}
+
+.nav-bar a {
+
+  font-size: 2rem;
+  transition: 0.2s all ease-in-out;
+}
+
+.nav-bar a:hover {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+    </style>
+<body>
+    <div class="nav-bar">
+        <a href="/">Home</a>
+        <a href="/appoint">Appointment</a>
+        <a href="/contact">Contact</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>Book Appointment For Your Paw's</h1>
+
+    <h2>Check Busy Slots</h2>
+    <form action="/check_busy_slots" method="POST">
+        <label for="busy_doctor">Select a doctor:</label>
+        <select name="doctor" id="busy_doctor">
+            <option value="Doc_A">Doctor A</option>
+            <option value="Doc_B">Doctor B</option>
+            <option value="Doc_C">Doctor C</option>
+        </select>
+        <label for="busy_day">Select a day:</label>
+        <select name="day" id="busy_day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        <button type="submit">Check Busy Slots</button>
+    </form>
+    {% if busy_slots %}
+        <p>Busy slots: {{ busy_slots }}</p>
+    {% endif %}
+
+    <h2>Check Available Slots</h2>
+    <form action="/check_available_slots" method="POST">
+        <label for="available_doctor">Select a doctor:</label>
+        <select name="doctor" id="available_doctor">
+            <option value="Doc_A">Doctor A</option>
+            <option value="Doc_B">Doctor B</option>
+            <option value="Doc_C">Doctor C</option>
+        </select>
+        <label for="available_day">Select a day:</label>
+        <select name="day" id="available_day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        <button type="submit">Check Available Slots</button>
+    </form>
+    {% if available_slots %}
+        <p>Available slots: {{ available_slots }}</p>
+    {% endif %}
+
+    <h2>Book Slot</h2>
+    <form action="/book_slot" method="POST">
+        <label for="booking_doctor">Select a doctor:</label>
+        <select name="doctor" id="booking_doctor">
+            <option value="Doc_A">Doctor A</option>
+            <option value="Doc_B">Doctor B</option>
+            <option value="Doc_C">Doctor C</option>
+        </select><br>
+        <label for="booking_day">Select a day:</label>
+        <select name="day" id="booking_day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select><br>
+        <label for="booking_slot">Select a time slot:</label>
+        <select name="slot" id="booking_slot">
+            <option value="0">12 o'clock</option>
+            <option value="1">1 o'clock</option>
+            <option value="2">2 o'clock</option>
+            <option value="3">3 o'clock</option>
+        </select><br>
+        <button type="submit">Book Appointment</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+</body>
+
+</html>
